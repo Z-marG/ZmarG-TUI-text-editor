@@ -5,7 +5,7 @@ this was built not because it is simple to use let alone be useful, this was *si
 might add dynamically allocated memory using stdlib.h if i feel like it
 
 ---
-# Install
+# Compile & Install
 ```bash
 git clone https://github.com/Z-marG/ZmarG-TUI-text-editor.git
 cd ZmarG-TUI-text-editor/
