@@ -22,7 +22,7 @@ void removeNl(char myString[], int *cCount) {
   while (myString[pos] != 10 && myString[pos] != 0)
     pos++;
   myString[pos] = 0;
-  // if the thing returning has a character counter needed
+
   if (cCount != (void *)0)
     *cCount += pos;
 }
@@ -136,13 +136,12 @@ start:
                  ? GREEN BOLD " [Preserved!]\n" RESET
                  : "\n"); // need to adjust the logic of this to better fit more
                           // edge cases.
-      if (pos != 1 && buf[line][0] != 32)
-        buf[line][pos++] = 10;
+      buf[line][pos++] = 10;
       buf[line][pos] = 0;
       line++;
       lineCount--;
       pos = 0;
-      printf("[%d]\t%s\x1b[K", line + 1, buf[line]);
+      printf("[%d]\x1b[K\t%s\x1b[K", line + 1, buf[line]);
       printf("\n[~]\t");
     } else {
       if (pos == 0)
@@ -153,10 +152,10 @@ start:
   }
 
   while (lineCount > 0) {
-    int temp_pos = 0;
-    while (buf[line][temp_pos] != 10 && buf[line][temp_pos] != 0)
-      temp_pos++;
-    buf[line++][temp_pos] = 10;
+    pos = 0;
+    while (buf[line][pos] != 10 && buf[line][pos] != 0)
+      pos++;
+    buf[line++][pos] = 10;
     lineCount--;
   }
 
