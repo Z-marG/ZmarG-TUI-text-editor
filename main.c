@@ -11,9 +11,9 @@
 #define size 1024
 
 char upper(char myChar) {
-  if (myChar >= 'a' && myChar <= 'z') {
+  if (myChar >= 'a' && myChar <= 'z')
     return myChar &= ~0x20;
-  } else
+  else
     return myChar;
 }
 
@@ -22,6 +22,7 @@ void removeNl(char myString[], int *cCount) {
   while (myString[pos] != 10 && myString[pos] != 0)
     pos++;
   myString[pos] = 0;
+  // if the thing returning has a character counter needed
   if (cCount != (void *)0)
     *cCount += pos;
 }
