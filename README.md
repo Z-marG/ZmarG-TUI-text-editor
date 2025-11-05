@@ -76,3 +76,8 @@ Would You Like to Edit it?
 [y/n]	~> *{n}*
 ```
 it saves in the same folder of the compiled executable
+
+# Issues
+- honestly there are too many to count
+- mostly has to do with saving
+- when user exits and saves edited content, lines gets amalgamated into this horribly corrupted mess
