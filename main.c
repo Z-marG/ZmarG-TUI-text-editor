@@ -10,9 +10,6 @@
 
 #define size 1024
 
-// TODO: make it arguable, if argument is empty it asks for file within running
-// process.
-
 char upper(char myChar) {
   if (myChar >= 'a' && myChar <= 'z')
     return myChar &= ~0x20;
@@ -99,8 +96,8 @@ start:
     printf("\n");
   }
 
-  printf("\nWould You Like to Edit it?\n[" GREEN "y" RESET "/" RED "n" RESET
-         "]\t~> " YELLOW);
+  printf(RESET "\nWould You Like to Edit it?\n[" GREEN "y" RESET "/" RED
+               "n" RESET "]\t~> " YELLOW);
   {
     char choice;
     if ((scanf(" %c", &choice)) == 0) {
