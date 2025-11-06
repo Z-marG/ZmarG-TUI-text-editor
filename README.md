@@ -23,44 +23,28 @@ gcc main.c -o ./text-editor
 # Usage
 text surrounded by \*{}* are user input
 ```
-$ ./text-editor
+$ *{./text-editor example.txt}*
 
-Welcome to Zmar-G's crappy text editor
+Welcome to Zmar-G's Crappy text editor
 
-
-Initializing Buffers...
-
-File name buffer... [ready!]
-Text data buffer... [ready!]
-
-What is your file name?
-	~> *{example.txt}*
-
-Opening File...
 
 File Doesn't Exist!
 
 Would you like to create it?
-[y/n]	~> *{y}* 
-
-[Creating file...]
-
-[File Created!]
+[y/n]	~> *{y}*
 
 Would You Like to Edit it?
-[y/n]	~> *{y}* 
+[y/n]	~> *{y}*
 
-New Contents: [Press ESC in a line after your last and press ENTER to save and exit]
+New Contents: [Press ESC in a new line and ENTER to save and exit]
 [1]	*{Hello!}*
 [2]	*{World!}*
 [3]	
-[~]	*{^[}* <- (ESC Pressed, because i havent imported real time user input!! 🔥)
+[~]	*{^[}* <- (When ESC is pressed)
 
 --------------------------------
 
-Saving file...
-
-File saved!
+--------------------------------
 
 File Contents:
 
@@ -75,7 +59,8 @@ Character Count: [12]
 Would You Like to Edit it?
 [y/n]	~> *{n}*
 ```
-it saves in the same folder of the compiled executable
+it saves in the same folder of the compiled executable <br>
+if no argument is passed the program will ask for a file name.
 
 # Issues
 - honestly there are too many to count
