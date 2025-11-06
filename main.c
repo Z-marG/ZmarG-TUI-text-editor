@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#define INTRO "\nWelcome to Zian's Shitty text editor\n\n"
+#define INTRO "\nWelcome to Zmar-G's Crappy text editor\n\n"
 
 #define RED "\x1b[31m"
 #define YELLOW "\x1b[33m"
