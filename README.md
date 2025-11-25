@@ -64,5 +64,5 @@ it saves in the same folder of the compiled executable <br>
 if no argument is passed the program will ask for a file name.
 
 # Issues
-- honestly there are too many to count
-- but there are none major spotted for now
+- Too many to count 🔥
+- Maybe adding real time input processing next time 🔥
