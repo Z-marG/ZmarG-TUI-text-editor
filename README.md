@@ -22,7 +22,7 @@ gcc main.c -o ./text-editor
 ```
 
 # Usage
-text surrounded by \*{ }* are user input
+text surrounded by \*{  }* are user input
 ```
 $ *{ ./text-editor example.txt }*
 
